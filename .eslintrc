@@ -1,10 +1,18 @@
 {
-  "extends": ["airbnb", "prettier"],
+  "extends": ["eslint:recommended", "airbnb", "prettier"],
   "plugins": ["react-hooks"],
   "env": {
     "browser": true
   },
   "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+
   "rules": {
     "no-plusplus": [0],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
@@ -12,10 +20,10 @@
     "react/jsx-props-no-spreading": [0],
     "import/prefer-default-export": [0],
     "react/no-array-index-key": [0],
-    "requireConfigFile": "false",
     "react/no-danger": [0],
     "prefer-arrow-callback": [0],
     "arrow-body-style": [0],
+    "react/function-component-definition": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   }
