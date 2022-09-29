@@ -1,30 +1,34 @@
 import React from 'react';
 import IMAGE_NOT_FOUND from '../../images/not-found.png';
 import { Star } from '../Styled';
+import { Headline, MainDataWrapper, TagList } from './ShowMainData.styled';
 
 const ShowMainData = ({ name, image, rating, summary, genre }) => {
   return (
-    <div>
+    <MainDataWrapper>
       <img src={image ? image.original : IMAGE_NOT_FOUND} alt="show-cover" />
-      <div>
-        <div>
+      <div className="text-side">
+        <Headline>
           <h1>{name}</h1>
           <div>
             <Star />
             <span>{rating.average || 'N/A'}</span>
           </div>
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: summary }} />
+        </Headline>
+        <div
+          className="summary"
+          dangerouslySetInnerHTML={{ __html: summary }}
+        />
         <div>
           Tags:{' '}
-          <div>
+          <TagList>
             {genre.map((genr, i) => (
               <span key={i}>{genr}</span>
             ))}
-          </div>
+          </TagList>
         </div>
       </div>
-    </div>
+    </MainDataWrapper>
   );
 };
 
