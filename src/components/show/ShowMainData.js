@@ -11,7 +11,7 @@ const ShowMainData = ({ name, image, rating, summary, genre }) => {
         <Headline>
           <h1>{name}</h1>
           <div>
-            <Star />
+            <Star starred="true" />
             <span>{rating.average || 'N/A'}</span>
           </div>
         </Headline>
