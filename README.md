@@ -16,5 +16,4 @@
 ![screenshot](https://github.com/SAM6358/BOX-Office-Using-React/blob/master/Screenshots/Screenshot%202022-10-02%20045034.png) Results about episodes of the show | ![screenshot](https://github.com/SAM6358/BOX-Office-Using-React/blob/master/Screenshots/Screenshot%202022-10-02%20045051.png) Results about the cast of the show |
 |-|-|
 
-![screenshot](https://github.com/SAM6358/BOX-Office-Using-React/blob/master/Screenshots/Screenshot%202022-10-02%20045316.png) Viewing starred shows | 
-|-|-|
+![screenshot](https://github.com/SAM6358/BOX-Office-Using-React/blob/master/Screenshots/Screenshot%202022-10-02%20045316.png) Viewing starred shows
